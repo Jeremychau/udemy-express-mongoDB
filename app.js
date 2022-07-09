@@ -1,5 +1,8 @@
+import fs from 'fs';
+import path from 'path';
 import express from 'express';
 import bodyParser from 'body-parser';
+import cors from 'cors';
 import mongoose from 'mongoose';
 import 'dotenv/config'
 
@@ -11,6 +14,12 @@ import HttpError from './models/http-error.js';
 const app = express();
 
 app.use(bodyParser.json());
+
+//handle image req
+app.use('/uploads/images', express.static(path.join('uploads', 'images')));
+
+app.use(cors());
+
 app.use('/api/places', placesRoutes);
 app.use('/api/users', usersRoutes);
 
@@ -20,12 +29,13 @@ app.use((req, res, next) => {
 });
 
 app.use((error, req, res, next) => {
+    if(req.body.file) fs.unlink(req.body.file.path, (err)=> console.log(err));
     if (res.headerSent) return next(error)
     res.status(error.code || 500).json({message: error.message || 'An unknow error occurred!'});
 });
 
 mongoose
-    .connect(`mongodb+srv://${process.env.dbusername}:${process.env.dbuserpw}@cluster0.u0pyb.mongodb.net/places?retryWrites=true&w=majority`)
+    .connect(`mongodb+srv://${process.env.dbusername}:${process.env.dbuserpw}@cluster0.u0pyb.mongodb.net/mern?retryWrites=true&w=majority`)
     .then( () => {
         app.listen(3030);
     } )
