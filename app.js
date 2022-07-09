@@ -35,7 +35,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-    .connect(`mongodb+srv://${process.env.dbusername}:${process.env.dbuserpw}@cluster0.u0pyb.mongodb.net/mern?retryWrites=true&w=majority`)
+    .connect(`mongodb+srv://${process.env.dbusername}:${process.env.dbuserpw}@cluster0.u0pyb.mongodb.net/${process.env.dbname}?retryWrites=true&w=majority`)
     .then( () => {
         app.listen(3030);
     } )

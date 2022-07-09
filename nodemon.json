@@ -1,0 +1,8 @@
+{
+    "env": {
+        "dbusername":"jeremy",
+        "dbuserpw":"PoeOigQ35DIJlvdW",
+        "dbname":"mern",
+        "jwt":"chorong"
+    }
+}
