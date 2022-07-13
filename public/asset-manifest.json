@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d89d0238.css",
+    "main.js": "/static/js/main.78f792bc.js",
+    "static/css/632.bc631564.chunk.css": "/static/css/632.bc631564.chunk.css",
+    "static/js/632.6e0fa96c.chunk.js": "/static/js/632.6e0fa96c.chunk.js",
+    "static/css/565.9f8b3523.chunk.css": "/static/css/565.9f8b3523.chunk.css",
+    "static/js/565.f005ab9d.chunk.js": "/static/js/565.f005ab9d.chunk.js",
+    "static/css/634.0c0ef45b.chunk.css": "/static/css/634.0c0ef45b.chunk.css",
+    "static/js/634.6a893c38.chunk.js": "/static/js/634.6a893c38.chunk.js",
+    "static/css/204.cab3e179.chunk.css": "/static/css/204.cab3e179.chunk.css",
+    "static/js/204.fa3c4822.chunk.js": "/static/js/204.fa3c4822.chunk.js",
+    "static/css/319.23e46d49.chunk.css": "/static/css/319.23e46d49.chunk.css",
+    "static/js/319.431f41a6.chunk.js": "/static/js/319.431f41a6.chunk.js",
+    "static/js/79.ab5f491c.chunk.js": "/static/js/79.ab5f491c.chunk.js",
+    "index.html": "/index.html",
+    "main.d89d0238.css.map": "/static/css/main.d89d0238.css.map",
+    "main.78f792bc.js.map": "/static/js/main.78f792bc.js.map",
+    "632.bc631564.chunk.css.map": "/static/css/632.bc631564.chunk.css.map",
+    "632.6e0fa96c.chunk.js.map": "/static/js/632.6e0fa96c.chunk.js.map",
+    "565.9f8b3523.chunk.css.map": "/static/css/565.9f8b3523.chunk.css.map",
+    "565.f005ab9d.chunk.js.map": "/static/js/565.f005ab9d.chunk.js.map",
+    "634.0c0ef45b.chunk.css.map": "/static/css/634.0c0ef45b.chunk.css.map",
+    "634.6a893c38.chunk.js.map": "/static/js/634.6a893c38.chunk.js.map",
+    "204.cab3e179.chunk.css.map": "/static/css/204.cab3e179.chunk.css.map",
+    "204.fa3c4822.chunk.js.map": "/static/js/204.fa3c4822.chunk.js.map",
+    "319.23e46d49.chunk.css.map": "/static/css/319.23e46d49.chunk.css.map",
+    "319.431f41a6.chunk.js.map": "/static/js/319.431f41a6.chunk.js.map",
+    "79.ab5f491c.chunk.js.map": "/static/js/79.ab5f491c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d89d0238.css",
+    "static/js/main.78f792bc.js"
+  ]
+}

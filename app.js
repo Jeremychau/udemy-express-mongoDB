@@ -17,16 +17,22 @@ app.use(bodyParser.json());
 
 //handle image req
 app.use('/uploads/images', express.static(path.join('uploads', 'images')));
+// for combined Front + Back end
+app.use( express.static(path.join('public')));
 
-app.use(cors());
+// app.use(cors());
 
 app.use('/api/places', placesRoutes);
 app.use('/api/users', usersRoutes);
 
-app.use((req, res, next) => {
-    const error = new HttpError('Could not find this Route')
-    throw error;
-});
+app.use( (req, res, next) => {
+    res.sendFile(path.resolve(__dirname, 'public' ,'index.html')); //unknow router to frontend index.html
+} )
+
+// app.use((req, res, next) => {
+//     const error = new HttpError('Could not find this Route')
+//     throw error;
+// });
 
 app.use((error, req, res, next) => {
     if(req.body.file) fs.unlink(req.body.file.path, (err)=> console.log(err));
